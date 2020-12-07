@@ -5,18 +5,24 @@ from matplotlib.collections import EllipseCollection
 from matplotlib.text import Annotation
 from world import World
 from bitmap import BitMap
-from scipy.misc import imread
+from scipy.misc.pilutil import imread
 from math import floor
 
-robotRadius = 0.7
+robotRadius = 0.5
 sensorRadius = 6
-swarmSize = 45
+swarmSize = 180
 shapeWidth = 7
-tick = 50 # miliseconds
+tick = 20 # milliseconds
 velocity = 1
-ang_velocity = 4
-
-file_path = "shapes/shape1.png"
+ang_velocity = 10
+# robotRadius = 0.7
+# sensorRadius = 6
+# swarmSize = 90
+# shapeWidth = 7
+# tick = 20 # milliseconds
+# velocity = 1
+# ang_velocity = 5
+file_path = "shapes/tumor100.png"
 
 bitmap = BitMap(file_path)
 origin = bitmap.origin
@@ -106,7 +112,7 @@ def mainLoop():
         
 
 anim = animation.FuncAnimation(fig, update, mainLoop, init_func=init, interval=tick)
-#anim.save('basic_animation.mp4', fps=int(1000/tick), extra_args=['-vcodec', 'libx264'])
+# anim.save('basic_animation.mp4', fps=int(1000/tick), extra_args=['-vcodec', 'libx264'])
 plt.imshow(img, interpolation='none', cmap="hot", zorder=0)
 plt.show()
 
