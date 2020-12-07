@@ -7,7 +7,8 @@ Reference:
 Rubenstein, Michael, Alejandro Cornejo, and Radhika Nagpal. "Programmable self-assembly in a thousand-robot swarm." Science 345.6198 (2014): 795-799. (http://science.sciencemag.org/content/345/6198/795)
 
 You can easily setup the required dependecies from the included .yml file. You will need conda for easy setup.
-To run:
+To run:  
+
 `conda env create -f assemblyenv.yml`
 
 `conda activate assemblyenv.yml`
