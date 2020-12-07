@@ -1,5 +1,5 @@
 Try and map a tumor with a swarm of Kilobots. 
-![alt text](https://github.com/sangeetsu/self_assembly/blob/master/tumor100.png?raw=true)
+![alt text](https://github.com/sangeetsu/self_assembly/blob/master/tumor682%20(2).png?raw=true)
 
 Based off of : https://github.com/dmancevo/self_assembly
 
